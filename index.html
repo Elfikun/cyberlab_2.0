@@ -1,64 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Cyberlab</title>
-		<script src="libs/gsap/gsap.min.js" defer></script>
-		<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
-		<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
-		<script src="js/app.js" defer></script>
-		<link rel="stylesheet" href="css/main.css" />
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="content">
-				<header class="hero-section">
-					<img data-speed=".6" class="hero" src="/img/logo/logo.png" alt="logo" />
-					<img data-speed=".6" class="hero__svg" src="/img/logo/lab.svg" alt="logo" />
-					<div class="container">
-						<div data-speed=".75" class="main-header">
-							<h1 class="main-title">Мы заботимся о технологиях, чтобы Вы заботились о бизнесе</h1>
-						</div>
-					</div>
-				</header>
 
-				<div class="portfolio">
-					<div class="container">
-						<main class="gallery">
-							<div data-speed=".9" class="gallery__left">
-								<img class="gallery__item" src="img/work/1.png" alt="alt" />
-								<img class="gallery__item" src="img/work/2.jpg" alt="alt" />
-								<div class="text-block gallery__item">
-									<h2 class="text-block__h">
-										Creative floating scroll with amazing parallax effect
-									</h2>
-									<p class="text-block__p">
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-										Quibusdam, sapiente vero.
-									</p>
-								</div>
-								<img class="gallery__item" src="img/work/6.jpg" alt="alt" />
-							</div>
-							<div data-speed="1.1" class="gallery__right">
-								<div class="text-block gallery__item">
-									<h2 class="text-block__h">
-										Creative floating scroll with amazing parallax effect
-									</h2>
-									<p class="text-block__p">
-										Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-										Quibusdam, sapiente vero.
-									</p>
-								</div>
-								<img class="gallery__item" src="img/work/3.jpg" alt="alt" />
-								<img class="gallery__item" src="img/work/4.jpg" alt="alt" />
-								<img class="gallery__item" src="img/work/5.jpg" alt="alt" />
-							</div>
-						</main>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Киберлаб</title>
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
+		integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+	<script src="js/app.js" defer></script>
+	<script src="js/main.js" defer></script>
+	<script src="js/noise.js" defer></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<div class="content">
+			<header class="hero-section">
+				<img data-speed=".6" class="hero" src="/img/logo/logo.png" alt="logo" />
+				<img data-speed=".6" class="hero__svg" src="/img/logo/lab.svg" alt="logo" />
+				<div class="container">
+					<div id="noise"></div>
+					<div data-speed=".75" class="main-header">
+						<h1 class="main-title">Мы заботимся о технологиях, чтобы Вы заботились о бизнесе</h1>
 					</div>
+				</div>
+
+			</header>
+
+			<div class="portfolio">
+				<div class="container">
+					<main class="gallery">
+						<div data-speed=".9" class="gallery__left">
+							<img class="gallery__item" src="img/work/1.png" alt="alt" />
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">
+									Абонентское обслуживание и настройка компьютеров:
+								</h2>
+								<ul class="text-block__ul">
+									<li>Диагностика состояния ПК.</li>
+									<li>Установка и настройка программного обеспечения</li>
+									<li>Подключение новых рабочих мест</li>
+									<li>Модернизация компьютерной техники</li>
+									<li>Подключение и настройка оргтехники</li>
+									<li>Работа только по безналичному расчету</li>
+								</ul>
+							</div>
+							<img class="gallery__item" src="img/work/3.png" alt="alt" />
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">
+									Обслуживание систем 1С:
+								</h2>
+								<ul class="text-block__ul">
+									<li>Установка типовой/нестандартной конфигурации 1С</li>
+									<li>Настройка, Доработка, Поддержка 1С</li>
+									<li>Обновление типовой/нестандартной конфигурации 1С</li>
+									<li>Перенос данных в 1С и настройка обмена данными</li>
+									<li>Интеграция с 1С</li>
+									<li>
+										Разработка и внедрение 1С: Предприятие под задачи Вашего
+										бизнеса
+									</li>
+									<li>Автоматизация бизнес процессов</li>
+								</ul>
+							</div>
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">
+									Комплексное обслуживание IT:
+								</h2>
+								<p class="text-block__p"> Наша ИТ-компания предоставляет услуги аутсорсинга по обслуживанию оборудования
+									для вашего бизнеса. Мы понимаем, что в
+									наше время надежное и эффективное оборудование играет важную роль в развитии бизнеса, поэтому мы
+									готовы предоставить вам
+									высококвалифицированных специалистов, которые помогут вам поддерживать и оптимизировать ваше
+									оборудование.
+									<br>
+									Мы предлагаем широкий спектр услуг по обслуживанию оборудования, включая профилактику, ремонт и замену
+									оборудования, а
+									также настройку и обновление программного обеспечения. Наша команда специалистов обладает высокими
+									техническими знаниями
+									и опытом работы с различными типами оборудования, включая компьютеры, серверы, принтеры, сканеры и
+									другое оборудование,
+									которое необходимо для эффективной работы вашего бизнеса.
+									<br>
+									Мы понимаем, что каждый бизнес уникален, поэтому мы предлагаем индивидуальный подход к каждому нашему
+									клиенту. Наша цель
+									- помочь вам обеспечить бесперебойную работу вашего оборудования, чтобы вы могли сосредоточиться на
+									развитии вашего
+									бизнеса. Мы гарантируем высокий уровень обслуживания и качественные результаты.
+									<br>
+									С нами вы получите максимальную производительность от вашего оборудования, и сможете сосредоточиться
+									на развитии вашего
+									бизнеса, оставляя обслуживание оборудования нам. Свяжитесь с нами сегодня, чтобы обсудить, как мы
+									можем помочь вашему
+									бизнесу обеспечить бесперебойную работу вашего оборудования.</p>
+							</div>
+							<div class="gallery__item box">
+								<div class="elements bg">
+
+								</div>
+								<div class="elements img-bx">
+									<img src="/img/logo/small_logo.png" alt="">
+								</div>
+								<div class="elements name">
+									<h2>Свяжитесь с нами</h2>
+									<a href="mailto: info@cyberlab23.ru" class="mail">info@cyberlab23.ru</a>
+								</div>
+								<div class="elements content">
+									<p>Юридический адрес: 350066, Краснодарский край, г Краснодар, ул
+										Бородинская, д. 14, помещ. 204
+										<br />
+										ИНН: 2312306855
+										<br />
+										КПП: 231201001
+										<br />
+										ОГРН: 1212300073534
+										<br />
+									</p>
+								</div>
+								<div class="card"></div>
+							</div>
+
+
+						</div>
+						<div data-speed="1.1" class="gallery__right">
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">
+									IT-поддержка серверов:
+								</h2>
+								<ul class="text-block__ul">
+									<li>Оптимизация производительности сервера</li>
+									<li>Проверка срока службы сертификатов</li>
+									<li>
+										Проверка доступности СУБД, сервера приложений; служб NGINX,
+										IIS, NodeJS, FTP; параметров служб MySQL, Asterisk, Microsoft
+										Exchange
+									</li>
+									<li>Миграция в облако</li>
+									<li>Внедрение виртуализации</li>
+								</ul>
+							</div>
+							<img class="gallery__item" src="img/work/2.png" alt="alt" />
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">
+									Настройка сетевого оборудования и средств связи:
+								</h2>
+								<ul class="text-block__ul">
+									<li>IP-телефония</li>
+									<li>Интернет</li>
+									<li>Корпоративная почта</li>
+									<li>Мониторинг уровня трафика, состояния интерфейсов.</li>
+									<li>Оборудование CISCO, Mikrotik, Juniper и др.</li>
+								</ul>
+							</div>
+
+							<img class="gallery__item" src="img/work/4.png" alt="alt" />
+							<img class="gallery__item" src="img/work/5.png" alt="alt" />
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">
+									МЫ ПОМОЖЕМ:
+								</h2>
+								<p class="text-block__p">Наша ИТ-компания специализируется на предоставлении услуг аутсорсинга
+									IT-поддержки для вашего бизнеса. Мы понимаем, что
+									в наше время цифровые технологии играют ключевую роль в развитии бизнеса, и мы готовы предоставить вам
+									высококвалифицированных специалистов, которые помогут вам управлять вашим онлайн-присутствием.
+									<br>
+									Мы предлагаем широкий спектр IT-услуг, включая управление веб-сайтом и социальными медиа, аналитику
+									веб-трафика,
+									разработку и обновление программного обеспечения, а также техническую поддержку. Наша команда
+									специалистов обладает
+									высокими техническими знаниями и опытом работы с различными платформами.
+									<br>
+									Мы понимаем, что каждый бизнес уникален, поэтому мы предлагаем индивидуальный подход к каждому нашему
+									клиенту. Наша цель
+									- помочь вам достичь успеха в вашем бизнесе, предоставляя вам высококачественные и надежные IT-услуги.
+									<br>
+									С нами вы получите максимальный результат от вашего онлайн-присутствия, и сможете сосредоточиться на
+									развитии вашего
+									бизнеса, оставляя IT-поддержку нам. Свяжитесь с нами сегодня, чтобы обсудить, как мы можем помочь
+									вашему бизнесу достичь
+									большего успеха в онлайн-мире.
+								</p>
+							</div>
+						</div>
+					</main>
 				</div>
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>
