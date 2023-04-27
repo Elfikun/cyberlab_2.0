@@ -36,16 +36,19 @@ h6 {
 	will-change: transform;
 }
 .content {
-	background: linear-gradient(to bottom left, rgba(247, 0, 255, 0.852), rgba(0, 0, 0, 0.5), rgba(247, 0, 255, 0.852))
-	
+	background: linear-gradient(
+		to bottom left,
+		rgba(247, 0, 255, 0.852),
+		rgba(0, 0, 0, 0.5),
+		rgba(247, 0, 255, 0.852)
+	);
 }
 .hero-section {
 	background: radial-gradient(rgba(255, 0, 157, 0.815), rgba(0, 0, 0, 0.5)),
-		url(../img/bg_synth.png);	
+		url(../img/bg_synth.png);
 	background-blend-mode: overlay;
 	filter: contrast(110%) brightness(95%) sepia(20%);
 	background-size: 100%;
-
 }
 
 .hero {
@@ -154,7 +157,7 @@ h6 {
 	width: 100%;
 	height: 100%;
 	pointer-events: none;
-	opacity: .1;
+	opacity: 0.1;
 	z-index: 1;
 }
 .gallery {
@@ -176,7 +179,7 @@ h6 {
 
 .portfolio img {
 	background-blend-mode: overlay;
-  filter: contrast(90%) brightness(90%) sepia(35%);
+	filter: contrast(90%) brightness(90%) sepia(35%);
 }
 .gallery__left {
 	margin-top: calc(var(--gallery-gap) * 1.75);
@@ -201,7 +204,7 @@ h6 {
 }
 .text-block__ul li {
 	font-size: 1.3em;
-	line-height: 1.60;
+	line-height: 1.6;
 }
 
 .box {
@@ -211,13 +214,13 @@ h6 {
 }
 .box .card {
 	/* position: relative; */
-	background: rgba(255, 255, 255, .1);
+	background: rgba(255, 255, 255, 0.1);
 	width: 300px;
 	min-height: 400px;
 	backdrop-filter: blur(10px);
-	border: 1px solid rgba(255, 255, 255, .5);
-	border-top: 1px solid rgba(255, 255, 255, .75);
-	border-left: 1px solid rgba(255, 255, 255, .75);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-top: 1px solid rgba(255, 255, 255, 0.75);
+	border-left: 1px solid rgba(255, 255, 255, 0.75);
 	border-radius: 20px;
 	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.05);
 }
@@ -227,26 +230,26 @@ h6 {
 	left: -30px;
 	width: 100px;
 	height: 100px;
-	background: rgba(255, 255, 255, .1);
+	background: rgba(255, 255, 255, 0.1);
 	transform: translateZ(80px);
 	backdrop-filter: blur(10px);
-	border: 1px solid rgba(255, 255, 255, .5);
-	border-top: 1px solid rgba(255, 255, 255, .75);
-	border-left: 1px solid rgba(255, 255, 255, .75);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-top: 1px solid rgba(255, 255, 255, 0.75);
+	border-left: 1px solid rgba(255, 255, 255, 0.75);
 	border-radius: 10px;
 	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.05);
 }
 
 .elements.bg::before {
-	content: '';
+	content: "";
 	position: absolute;
 	inset: 0;
-	background: url(/img/location-outline.svg);
+	background: url(../img/location-outline.svg);
 	background-size: 60px;
 	background-position: center;
 	background-repeat: no-repeat;
 	opacity: 0;
-	transition: .5s;
+	transition: 0.5s;
 }
 .box:hover .elements.bg::before {
 	opacity: 1;
@@ -264,12 +267,12 @@ h6 {
 	position: absolute;
 	width: calc(100% - 20px);
 	border-radius: 8px;
-	border: 1px solid rgba(255, 255, 255, .5);
-	border-top: 1px solid rgba(255, 255, 255, .75);
-	border-left: 1px solid rgba(255, 255, 255, .75);
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-top: 1px solid rgba(255, 255, 255, 0.75);
+	border-left: 1px solid rgba(255, 255, 255, 0.75);
 	box-shadow: 0 25px 45px rgba(0, 0, 0, 0.05);
 	opacity: 0;
-	transition: .5s;
+	transition: 0.5s;
 }
 .box:hover .elements.img-bx img {
 	opacity: 1;
@@ -287,9 +290,9 @@ h6 {
 	border: none;
 	box-shadow: none;
 	color: #fafafa;
-	transition: .5s;
+	transition: 0.5s;
 	opacity: 0;
-	transition-delay: .25s;
+	transition-delay: 0.25s;
 }
 .elements.name a {
 	color: #000;
@@ -316,10 +319,10 @@ h6 {
 .elements.content p {
 	position: relative;
 	color: #fafafa;
-	font-size: .85em;
+	font-size: 0.85em;
 	opacity: 0;
-	transition: .5s;
-	transition-delay: .5s;
+	transition: 0.5s;
+	transition-delay: 0.5s;
 }
 .box:hover .elements.content p {
 	opacity: 1;
