@@ -294,3 +294,50 @@ h6 {
 .box:hover .elements.content p {
 	opacity: 1;
 }
+@media only screen and (max-width: 768px) {
+  .hero {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+    bottom: 10vh;
+  }
+
+  .gallery {
+    padding: calc(var(--index) * 4) 0;
+    flex-wrap: wrap;
+  }
+
+  .gallery__item {
+    max-width: 100%;
+    margin-bottom: calc(var(--gallery-gap) * 2.5);
+  }
+
+  .text-block__h {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .text-block__p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .text-block__ul li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .box .card {
+    width: 100%;
+    min-height: 300px;
+    border-radius: 10px;
+  }
+	.gallery__item.box {
+		display: none;
+	}
+}
